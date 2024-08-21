@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comfort-Zone</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-header">
+        <div class="nav-logo">
+          <a href="/" class="logo">Comfort-Zone</a>
+        </div>
+        <div class="nav-menu-btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <div>
+        <ul class="nav_links" id="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/product">Products</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header class="section_container header_container" id="home">
+      <div class="header_image">
+        <img
+          src="{{ url_for('static', filename='images/home2.jpg') }}"
+          alt="header"
+        />
+      </div>
+      <div class="header_content">
+        <div>
+          <h1>Graceful Style, Cozy Comfort</h1>
+          <p>Welcome to Comfort-Zone, where style meets comfort.</p>
+        </div>
+      </div>
+    </header>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+  </body>
+</html>

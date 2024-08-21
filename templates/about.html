@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-header">
+        <div class="nav-logo">
+          <a href="/" class="logo">Comfort-Zone</a>
+        </div>
+        <div class="nav-menu-btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+        <div>
+          <ul class="nav_links" id="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/product">Products</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="section_container header_container" id="home">
+      <div class="about_header">
+        <div>
+          <h2 class="section_header">Welcome to Our About Page</h2>
+          <p class="section_description">
+            At Comfort-Zone, we bring you the latest trends in clothing at
+            prices that won't break the bank. Our collection is designed to
+            offer both style and comfort, ensuring you look and feel your best.
+            Enjoy the ease of home delivery and our commitment to quality with
+            every purchase. Discover fashionable, affordable clothing tailored
+            to your lifestyle. Experience the perfect blend of comfort and style
+            with Comfort-Zone today!
+          </p>
+        </div>
+      </div>
+      <div class="about_content">
+        <div class="about_images">
+          <img
+            src="{{ url_for('static', filename='images/abouut4.jpg') }}"
+            alt="header"
+          />
+          <img
+            src="{{ url_for('static', filename='images/about2.jpg') }}"
+            alt="header"
+          />
+          <img
+            src="{{ url_for('static', filename='images/about1.jpg') }}"
+            alt="header"
+          />
+          <img
+            src="{{ url_for('static', filename='images/about7.jpg') }}"
+            alt="header"
+          />
+          <img
+            src="{{ url_for('static', filename='images/about5.jpg') }}"
+            alt="header"
+          />
+        </div>
+      </div>
+    </header>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-header">
+        <div class="nav-logo">
+          <a href="/" class="logo">Comfort-Zone</a>
+        </div>
+        <div class="nav-menu-btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+        <div>
+          <ul class="nav_links" id="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/product">Products</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="product1" class="section-p1">
+      <h2>Featured Products</h2>
+      <p>Our Collection New Design</p>
+      <div class="carousel-container">
+        <button class="carousel-btn left-arrow">&larr;</button>
+        <div class="pro-container">
+          <div class="pro">
+            <img
+              src="{{ url_for('static', filename='images/p1.jpg') }}"
+              alt="Product 1"
+            />
+            <div class="des">
+              <h5>Single-Breasted Blazer</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$40</h4>
+            </div>
+            <a href="/contact"><i class="fal fa-shopping-cart cart"></i></a>
+          </div>
+          <div class="pro">
+            <img
+              src="{{ url_for('static', filename='images/home.jpg') }}"
+              alt="Product 1"
+            />
+            <div class="des">
+              <h5>Casual Short-Suit</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$25</h4>
+            </div>
+            <a href="/contact"><i class="fal fa-shopping-cart cart"></i></a>
+          </div>
+          <div class="pro">
+            <img
+              src="{{ url_for('static', filename='images/p.jpg') }}"
+              alt="Product 1"
+            />
+            <div class="des">
+              <h5>White Tulle Mesh Skirt</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$16.36</h4>
+            </div>
+            <a href="/contact"><i class="fal fa-shopping-cart cart"></i></a>
+          </div>
+          <div class="pro">
+            <img
+              src="{{ url_for('static', filename='images/p5.jpeg') }}"
+              alt="Product 1"
+            />
+            <div class="des">
+              <h5>Mint Lace Midi Dress</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$36</h4>
+            </div>
+            <a href="/contact"><i class="fal fa-shopping-cart cart"></i></a>
+          </div>
+          <div class="pro">
+            <img
+              src="{{ url_for('static', filename='images/p4.jpg') }}"
+              alt="Product 1"
+            />
+            <div class="des">
+              <h5>Ethnic Top-Pant Set</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$25</h4>
+            </div>
+            <a href="/contact"><i class="fal fa-shopping-cart cart"></i></a>
+          </div>
+        </div>
+        <button class="carousel-btn right-arrow">&rarr;</button>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+  </body>
+</html>
